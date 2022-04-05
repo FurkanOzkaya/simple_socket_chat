@@ -115,7 +115,7 @@ func serveWs(pool *UserPool, w http.ResponseWriter, r *http.Request) {
   	}
   // listen indefinitely for new messages coming
   // through on our WebSocket connection
-    reader(pool, ws) // make it with goroutine # TODO
+    reader(pool, ws)
 }
 
 func setupRoutes() {
@@ -128,7 +128,7 @@ func setupRoutes() {
 
 
 func main() {
-    fmt.Println("Real Time Server v0.01")
+    fmt.Println("Real Time Server v0.1")
     setupRoutes()
     http.ListenAndServe(":8088", nil)
 }

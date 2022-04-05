@@ -1,4 +1,4 @@
-module github.com/furkanozkaya/go_socket_try
+module github.com/furkanozkaya/go_socket_v0.1
 
 go 1.17
 
